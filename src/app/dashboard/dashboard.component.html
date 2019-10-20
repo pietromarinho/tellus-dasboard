@@ -1,0 +1,153 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <h3 class="text-white text-center" style="color: white;">DADOS E ESTATÍSTICAS</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header" data-background-color="blue">
+                        <i class="material-icons">cloud</i>
+                    </div>
+                    <div class="card-content">
+                        <p class="category">Temperatura média Global</p>
+                        <h3 class="card-title">23°</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header" data-background-color="green">
+                        <i class="material-icons">eco</i>
+                    </div>
+                    <div class="card-content">
+                        <p class="category">Índice de vegetação Global</p>
+                        <h3 class="card-title">31%</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header" data-background-color="purple">
+                        <i class="material-icons">people_alt</i>
+                    </div>
+                    <div class="card-content">
+                        <p class="category">Densidade populacional</p>
+                        <h3 class="card-title">14.7 por km2</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header" data-background-color="red">
+                        <i class="material-icons">error</i>
+                    </div>
+                    <div class="card-content">
+                        <p class="category">Total de ocorrências</p>
+                        <h3 class="card-title">+6340</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-icon" data-background-color="rose">
+                        <i class="material-icons">language</i>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Quantidade de ocorrências por país</h4>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <app-md-table [data]="tableData">
+                                </app-md-table>
+                            </div>
+                            <div class="col-md-6 col-md-offset-1">
+                                <div id="worldMap" class="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" style="background-color: transparent;">
+                <div class="card card-chart">
+                    <div class="card-header" data-background-color="blue" data-header-animation="true">
+                        <div class="ct-chart" id="dailySalesChart"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-actions">
+                            <button type="button" class="btn btn-danger btn-simple fix-broken-card">
+                                <i class="material-icons">build</i> Fix Header!
+                            </button>
+                            <button type="button" class="btn btn-info btn-simple" matTooltip="Refresh"
+                                [matTooltipPosition]="'below'">
+                                <i class="material-icons">refresh</i>
+                            </button>
+                            <button type="button" class="btn btn-default btn-simple" matTooltip="Change Date"
+                                [matTooltipPosition]="'below'">
+                                <i class="material-icons">edit</i>
+                            </button>
+                        </div>
+                        <h4 class="card-title">Oscilação da temperatura</h4>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="background-color:transparent;">
+                <div class="card card-chart">
+                    <div class="card-header" data-background-color="green" data-header-animation="true">
+                        <div class="ct-chart" id="completedTasksChart"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-actions">
+                            <button type="button" class="btn btn-danger btn-simple fix-broken-card">
+                                <i class="material-icons">build</i> Fix Header!
+                            </button>
+                            <button type="button" class="btn btn-info btn-simple" matTooltip="Refresh"
+                                [matTooltipPosition]="'below'">
+                                <i class="material-icons">refresh</i>
+                            </button>
+                            <button type="button" class="btn btn-default btn-simple" matTooltip="Change Date"
+                                [matTooltipPosition]="'below'">
+                                <i class="material-icons">edit</i>
+                            </button>
+                        </div>
+                        <h4 class="card-title">Oscilação do índice de vegetação</h4>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="background-color: transparent;">
+                <div class="card card-chart">
+                    <div class="card-header" data-background-color="purple" data-header-animation="true">
+                        <div class="ct-chart" id="websiteViewsChart"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-actions">
+                            <button type="button" class="btn btn-danger btn-simple fix-broken-card">
+                                <i class="material-icons">build</i> Fix Header!
+                            </button>
+                            <button type="button" class="btn btn-info btn-simple" matTooltip="Refresh"
+                                [matTooltipPosition]="'below'">
+                                <i class="material-icons">refresh</i>
+                            </button>
+                            <button type="button" class="btn btn-default btn-simple" matTooltip="Change Date"
+                                [matTooltipPosition]="'below'">
+                                <i class="material-icons">edit</i>
+                            </button>
+                        </div>
+                        <h4 class="card-title">Crescimento da população</h4>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

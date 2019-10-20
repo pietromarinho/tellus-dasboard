@@ -1,0 +1,16 @@
+<nav #navbar class="navbar navbar-transparent navbar-absolute" style="background-color: #7a04d4;">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+            <div (window:resize)="onResize($event)">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="http://localhost:8081/">
+                            <i class="material-icons">keyboard_backspace</i>
+                            Página inicial
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
