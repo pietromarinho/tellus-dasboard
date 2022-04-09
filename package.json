@@ -53,7 +53,7 @@
     "jquery": "3.2.1",
     "jquery-validation": "1.17.0",
     "jvectormap": "2.0.4",
-    "moment": "2.18.1",
+    "moment": "2.29.2",
     "moment-timezone": "0.4.0",
     "ng2-nouislider": "1.6.1",
     "ng2-select": "1.2.0",
